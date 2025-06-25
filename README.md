@@ -1,12 +1,38 @@
-# Machine Learning Repository
+# End-to-End ML Project Example
 
-This repository is based on the book *Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow* by Aurélien Géron. It follows the concepts, examples, and practices outlined in the book to provide a practical guide for implementing Machine Learning algorithms and techniques.
+This repository demonstrates a **complete machine learning project pipeline**, from data loading and exploration to preprocessing and feature engineering—all structured in a clean and modular way.
 
-## About the Book
-*Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow* is a comprehensive resource for learning the fundamentals and advanced concepts of Machine Learning. It covers topics such as:
-- Supervised and unsupervised learning.
-- Neural networks and deep learning.
-- Scikit-Learn, Keras, and TensorFlow frameworks.
+It is inspired by the workflow in **Chapter 2** of *Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow* by Aurélien Géron. The project uses the California housing dataset and is intended as a reference or starting point for building real-world ML pipelines.
 
-## Link:
-- https://colab.research.google.com/github/ageron/handson-ml3/blob/main
+---
+
+## Project Highlights
+
+* End-to-end ML pipeline using **Scikit-Learn**
+* Data loading, visualization, and analysis
+* Feature engineering and transformation
+* Custom transformers and pipelines
+* Categorical handling and scaling
+* Modular, production-oriented structure
+
+---
+
+## Goal
+
+To provide a clear, practical example of how to structure and implement a complete machine learning project—from raw data to a clean processed dataset ready for modeling.
+
+---
+
+## Dataset
+
+The project uses the **California housing dataset**, a common dataset for regression problems.
+
+---
+
+## Reference
+
+Based on the concepts from:
+
+* *Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow* by Aurélien Géron
+  [Official GitHub](https://github.com/ageron/handson-ml3)
+  [Google Colab Link](https://colab.research.google.com/github/ageron/handson-ml3/blob/main)
