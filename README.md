@@ -1,38 +1,66 @@
-# End-to-End ML Project Example
+# End-to-End ML Regression Project
 
-This repository demonstrates a **complete machine learning project pipeline**, from data loading and exploration to preprocessing and feature engineering—all structured in a clean and modular way.
+This repository demonstrates a **complete machine learning pipeline**, covering everything from data acquisition to feature transformation. It is based on **Chapter 2** of *Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow* by Aurélien Géron.
 
-It is inspired by the workflow in **Chapter 2** of *Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow* by Aurélien Géron. The project uses the California housing dataset and is intended as a reference or starting point for building real-world ML pipelines.
+The project uses the **California housing dataset** and is designed to serve as a robust template for structuring real-world regression workflows.
 
 ---
 
 ## Project Highlights
 
-* End-to-end ML pipeline using **Scikit-Learn**
-* Data loading, visualization, and analysis
-* Feature engineering and transformation
-* Custom transformers and pipelines
-* Categorical handling and scaling
-* Modular, production-oriented structure
+- Clean, modular pipeline using **Scikit-Learn**
+- Exploratory Data Analysis (EDA) with insightful visualizations
+- Feature engineering (ratios, log transforms, cluster similarities)
+- Custom transformers and reusable pipeline components
+- One-hot encoding of categorical features
+- Unified `ColumnTransformer`-based preprocessing pipeline
+- Output-ready dataset with **24 engineered features**
 
 ---
 
 ## Goal
 
-To provide a clear, practical example of how to structure and implement a complete machine learning project—from raw data to a clean processed dataset ready for modeling.
+To provide a clear, modular, and reproducible example of a real-world machine learning pipeline for regression tasks—structured in a way that supports scaling, experimentation, and future model training.
 
 ---
 
 ## Dataset
 
-The project uses the **California housing dataset**, a common dataset for regression problems.
+**California Housing Dataset** from the 1990 U.S. Census  
+- Predicts median house value from 9+ features
+- Common benchmark for regression modeling and pipeline design  
+- Loaded via `fetch_california_housing` or from external `.tgz` file
+
+---
+
+## Core Concepts Covered
+
+| Concept                      | Implementation                               |
+|-----------------------------|-----------------------------------------------|
+| Data Loading                | `fetch_housing_data()` with caching          |
+| Visualization               | Histograms, scatterplots, `scatter_matrix`   |
+| Stratified Sampling         | Based on income categories                   |
+| Correlation Analysis        | Pearson coefficient, matrix, and plots       |
+| Feature Engineering         | Rooms-per-household, income ratios, etc.     |
+| Pipelines                   | `Pipeline` + `ColumnTransformer`             |
+| Custom Transformers         | `CombinedAttributesAdder`, cluster encoder   |
+| Categorical Encoding        | `OneHotEncoder`                              |
+| Scaling                     | `StandardScaler`                             |
 
 ---
 
 ## Reference
 
-Based on the concepts from:
+Based on concepts from:
 
-* *Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow* by Aurélien Géron
-  [Official GitHub](https://github.com/ageron/handson-ml3)
-  [Google Colab Link](https://colab.research.google.com/github/ageron/handson-ml3/blob/main)
+> *Hands-On Machine Learning with Scikit-Learn, Keras, and TensorFlow*  
+> by **Aurélien Géron**
+
+- [📘 Book Website](https://github.com/ageron/handson-ml3)
+- [📓 Google Colab Notebooks](https://colab.research.google.com/github/ageron/handson-ml3/blob/main)
+
+---
+
+## Notes
+
+This repo focuses only on data handling and preprocessing. **Model training, evaluation, and hyperparameter tuning**
